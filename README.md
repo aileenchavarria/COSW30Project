@@ -27,7 +27,7 @@ last_login, DATETIME, Attributes
 
 Files marked with a * might be deleted or repurposed. Files marked with a + are possible additions.
 
-As of now, there will be 17 required files, possibly a few more if I can get the user profiles and ability to edit profiles up and running.
+As of now, there will be 16-18 required files, possibly a few more if I can get the user profiles and ability to edit profiles up and running.
 
 1. Title: Add User page
 
@@ -61,13 +61,13 @@ Users: Admin
 
 Description: The footer used throughout the website. Will likely add redirections to 'Keen's' other social media profiles.
 
-5. Title: Sign Up Form
+5. Title: Form (*)
 
 Filename: form.css
 
 Users: Members
 
-Description: The form used to create an account.
+Description: Didn't have code on it, will probably delete once I ensure it wasn't important.
 
 6. Title: Header
 
