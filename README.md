@@ -1,6 +1,6 @@
 // COSW30Project //
 
-LAST UPDATED: 5/10/21 - Uploading everything that is currently functional.
+LAST UPDATED: 5/10/21 - Uploaded everything that is currently functional.
 
 // Summary //
 
