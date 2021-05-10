@@ -7,25 +7,25 @@ The purpose of this project is to create a minimalistic dating website. Users wi
 
 //Database Planning //
 
-<USERS> - Table Name
+USERS - Table Name
 
-<user_id>, <INT 11>, <Primary Key>, <Auto Increment>, <NOT NULL>
+user_id, INT 11, Primary Key, Auto Increment, NOT NULL
 
-<email_address>, <VARCHAR 50>, <Attributes>
+email_address, VARCHAR 50, Attributes
 
-<password>, <VARCHAR 100>, <Attributes>
+password, VARCHAR 100, Attributes
   
-<first_name>, <VARCHAR 50>, <Attributes>
+first_name, VARCHAR 50, Attributes
   
-<last_name>, <VARCHAR 50>, <Attributes>
+last_name, VARCHAR 50, Attributes
   
-<create_date>, <TIMESTAMP>, <Attributes>
+create_date, TIMESTAMP, Attributes
   
-<last_login>, <DATETIME>, <Attributes>
+last_login, DATETIME, Attributes
 
 // Functionality Outline //
 
-Files marked with a * might be deleted or repurposed.
+Files marked with a * might be deleted or repurposed. Files marked with a + are possible additions.
 
 As of now, there will be 17 required files, possibly a few more if I can get the user profiles and ability to edit profiles up and running.
 
@@ -45,7 +45,7 @@ Users: Members
 
 Description: This primarily serves as the image users will see on the index page.
 
-* 3. Title: Edit User Page
+3. Title: Edit User Page (*)
 
 Filename: edit_user.php
 
@@ -157,7 +157,7 @@ Users: Admin
 
 Description: CSS used specifically for the index page.
 
-* 17. Title: List of Users
+17. Title: List of Users (*)
 
 Filename: userlist.php
 
@@ -165,10 +165,26 @@ Users: Members, Admin
 
 Description: Displays list of users and allows a member to add a user.
 
+18. Title: Profile (+)
+
+Filename: 
+
+Users: Member, Admin
+
+Description: Displays the user's profile.
+
+19. Title: Edit Profile (+)
+
+Filename: 
+
+Users: Member, Admin
+
+Description: Allows the user to edit their profile.
+
 // Wireframe //
 
 Will be included in files.
 
 // Team Meeting Schedule //
 
-I am working alone and will work on this as often as possible. 
+I am working alone and will work on this as often and frequently as I can.
