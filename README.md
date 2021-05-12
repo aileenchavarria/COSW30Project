@@ -28,7 +28,7 @@ last_login, DATETIME,
 
 Files marked with a * might be deleted or repurposed. Files marked with a + are possible additions.
 
-As of now, there will be 16-18 required files, possibly a few more if I can get the user profiles and ability to edit profiles up and running.
+As of now, there will be 16-18 required files, possibly a few more if I can get the directory, user profiles and ability to edit profiles up and running.
 
 1. Title: Add User page
 
