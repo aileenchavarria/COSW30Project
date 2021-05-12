@@ -12,17 +12,17 @@ USERS - Table Name
 
 user_id, INT 11, Primary Key, Auto Increment, NOT NULL
 
-email_address, VARCHAR 50, Attributes
+email_address, VARCHAR 50, 
 
-password, VARCHAR 100, Attributes
+password, VARCHAR 100, 
+
+user_name, VARCHAR 50, * Reminder to ensure I changed last_name to user_name everywhere else.
   
-first_name, VARCHAR 50, Attributes
+first_name, VARCHAR 50,
   
-last_name, VARCHAR 50, Attributes
+create_date, TIMESTAMP, 
   
-create_date, TIMESTAMP, Attributes
-  
-last_login, DATETIME, Attributes
+last_login, DATETIME, 
 
 // Functionality Outline //
 
