@@ -1,6 +1,9 @@
 // COSW30Project //
 
-LAST UPDATED: 5/10/21 - Uploaded everything that is currently functional. Will work on directory at some point this week. 
+LAST UPDATED: 5/25/21 - Reuploaded code accordingly. Can register a user and login, however I haven't quite figured out how sessions work. Need to work that out in order to allow signed in users to be the ONLY ones who can see the directory. I would ideally like to allow users to upload images/edit their own profile but I think I must've misconnected the database or didn't assign a user id to the profile because the information doesn't show according to the user. 
+
+
+5/10/21 - Uploaded everything that is currently functional. Will work on directory at some point this week. 
 
 // Summary //
 
@@ -8,18 +11,22 @@ The purpose of this project is to create a minimalistic dating website. Users wi
 
 //Database Planning //
 
-USERS - Table Name
+USER - Table Name
 
 user_id, INT 11, Primary Key, Auto Increment, NOT NULL
 
+*username VARCHAR 20,
+
+first_name, VARCHAR 50,
+
 email_address, VARCHAR 50, 
 
-password, VARCHAR 100, 
+*age VARCHAR 2,
 
-user_name, VARCHAR 50, * Reminder to ensure I changed last_name to user_name everywhere else.
-  
-first_name, VARCHAR 50,
-  
+*area VARCHAR 50,
+
+password1, VARCHAR 100, 
+
 create_date, TIMESTAMP, 
   
 last_login, DATETIME, 
@@ -166,9 +173,9 @@ Users: Members, Admin
 
 Description: Displays list of users and allows a member to add a user.
 
-18. Title: Profile (+)
+18. Title: Profile 
 
-Filename: 
+Filename: profile.php
 
 Users: Member, Admin
 
@@ -181,6 +188,12 @@ Filename:
 Users: Member, Admin
 
 Description: Allows the user to edit their profile.
+
+20. Title: Welcome 
+
+Filename: welcome.php
+
+Description: Welcomes the user when they register.
 
 // Wireframe //
 
