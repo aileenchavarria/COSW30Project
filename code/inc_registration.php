@@ -11,19 +11,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$problem = false; // No problems so far.
 	
 	// Check for each value...
-	if (empty($_POST['first_name'])) {
+	if (empty($_POST['username'])) {
 		$problem = true;
-		print '<center><p class="text--error">Please enter your first name!</p><center>';
+		print '<center><p class="text--error">Please enter your username!</p><center>';
 	}
 	
-	if (empty($_POST['last_name'])) {
+	if (empty($_POST['first_name'])) {
 		$problem = true;
-		print '<center><p class="text--error">Please enter your last name!</p></center>';
+		print '<center><p class="text--error">Please enter your first name!</p></center>';
 	}
 
 	if (empty($_POST['email'])) {
 		$problem = true;
 		print '<center><p class="text--error">Please enter your email address!</p></center>';
+	}
+
+
+	if (empty($_POST['age'])) {
+		$problem = true;
+		print '<center><p class="text--error">Please enter your age!</p></center>';
+	}
+
+	if (empty($_POST['location'])) {
+		$problem = true;
+		print '<center><p class="text--error">Please enter your location!</p></center>';
 	}
 
 	if (empty($_POST['password1'])) {
@@ -58,18 +69,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	<p>
   <i class="fas fa-user-alt"></i>
-  <label for="first_name">First Name:</label>
-  <input type="text" name="first_name" size="20" 
-  value="<?php if (isset($_POST['first_name'])) { print htmlspecialchars($_POST['first_name']); } ?>">
+  <label for="username">Username:</label>
+  <input type="text" name="username" size="20" 
+  value="<?php if (isset($_POST['username'])) { print htmlspecialchars($_POST['username']); } ?>">
   </p>
 
 	<p>
   <i class="fas fa-signature"></i>
-  <label for="last_name">Last Name:</label><input type="text" name="last_name" size="20" value="<?php if (isset($_POST['last_name'])) { print htmlspecialchars($_POST['last_name']); } ?>"></p>
+  <label for="first_name">First Name:</label><input type="text" name="first_name" size="20" value="<?php if (isset($_POST['first_name'])) { print htmlspecialchars($_POST['first_name']); } ?>"></p>
 
 	<p>
   <i class="fas fa-envelope"></i>
   <label for="email">Email Address:</label><input type="email" name="email" size="20" value="<?php if (isset($_POST['email'])) { print htmlspecialchars($_POST['email']); } ?>"></p>
+
+	<p>
+<i class="fas fa-birthday-cake"></i>
+  <label for="age">Age:</label><input type="text" name="age" size="2" value="<?php if (isset($_POST['age'])) { print htmlspecialchars($_POST['age']); } ?>"></p>
+
+  <p>
+<i class="fas fa-compass"></i>
+  <label for="area">Location:</label><input type="text" name="area" size="20" value="<?php if (isset($_POST['area'])) { print htmlspecialchars($_POST['area']); } ?>"></p>
 
 	<p>
 <i class="fas fa-lock"></i>
