@@ -2,7 +2,7 @@
 /* This page lets people login to the website (in theory). */
 
 function checkLogin($email, $password) {
-  if ($email == "user@user.com" && $password == "12345") {
+  if ($email == "$email" && $password == "$password") {
       echo '<p><center>You are now sucessfully logged in!</center></p><br>';
   }
   else {
