@@ -27,17 +27,16 @@ $query = "SELECT * FROM USER";
 $result = mysqli_query($connection, $query);
 
 
-echo "<center><table><thead><td>ID</td><td>First Name</td><td>Last Name</td><td>Email Address</td><td>Actions</td></thead>"; // open table and include table headings
+echo "<center><table><thead><td>ID</td><td>Username</td><td>First Name</td><td>Age</td><td>Location</td><td>Email Address</td><td>Actions</td></thead>"; // open table and include table headings
 
 while ($row = mysqli_fetch_assoc($result)) {
-echo "<center><tr><td>" . $row['user_id'] . "</td><td>" . $row['first_name'] . "</td><td>" .$row['last_name'] . "</td><td>" . $row['email_address'] . "</td><td><a href='edit_user.php?id=" .$row['user_id'] ."'>Edit</a></td></tr>";
+echo "<center><tr><td>" . $row['user_id'] . "</td><td>" . $row['username'] . "</td><td>" .$row['first_name'] . "</td><td>" .$row['age'] . "</td><td>" .$row['area'] . "</td><td>" . $row['email_address'] . "</td><td><a href='profile.php?id=" .$row['user_id'] ."'>View</a></td></tr>";
 }
 echo "</table>"; // close table
 
 echo "<br>";
 
-echo '<a href="http://aileenc.sgedu.site/departmentlist.php"><button>List of Departments</button></a>';
-echo '<a href="http://aileenc.sgedu.site/add_user.php"><button>Add User</button></a>';
+
 
 ?>
 </body>
