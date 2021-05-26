@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_address = $_POST['email_address'];
     $password = $_POST['password'];
     $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
+    $username = $_POST['username'];
     $status = $POST['status'];
 
     $update_query =
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         SET email_address = '$email_address',
         password = '$password',
         first_name = '$first_name',
-        last_name = '$last_name'
+        username = '$username'
         WHERE user_id = $user_id";
 
         //echo $update_query;
@@ -61,9 +61,9 @@ include 'footer.php';
 <center><h1>Update User</h1>
 <center><form action="edit_user.php" method="post" class="form--inline">
  <p>User ID: <input type="text" name="user_id" readonly value="<?php echo $row['user_id']; ?>"></p>
- <p>First Name: <input type="text" name="first_name" value="<?php echo $row['first_name']; ?>" 
+  <p>Username: <input type="text" name="username" value="<?php echo $row['username']; ?>" 
  required></p>
- <p>Last Name: <input type="text" name="last_name" value="<?php echo $row['last_name']; ?>" 
+ <p>First Name: <input type="text" name="first_name" value="<?php echo $row['first_name']; ?>" 
  required></p>
  <p>Email Address: <input type="text" name="email_address" value="<?php echo $row['email_address']; ?>"
  required></p>
