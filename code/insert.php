@@ -10,14 +10,19 @@ if($link === false){
 }
  
 // Escape user inputs for security
+$username = mysqli_real_escape_string($link, $_REQUEST['username']);
 $first_name = mysqli_real_escape_string($link, $_REQUEST['first_name']);
-$last_name = mysqli_real_escape_string($link, $_REQUEST['last_name']);
 $email_address = mysqli_real_escape_string($link, $_REQUEST['email']);
+$age = mysqli_real_escape_string($link, $_REQUEST['age']);
+$area = mysqli_real_escape_string($link, $_REQUEST['area']);
+$password1 = mysqli_real_escape_string($link, $_REQUEST['password1']);
  
 // Attempt insert query execution
-$sql = "INSERT INTO USER (first_name, last_name, email_address) VALUES ('$first_name', '$last_name', '$email_address')";
+$sql = "INSERT INTO USER (username, first_name, email_address, age, area, password1) VALUES ('$username', '$first_name', '$email_address', '$age', '$area', '$password1')";
 if(mysqli_query($link, $sql)){
-    echo "User registered sucessfully.";
+  echo '<td>';
+include('welcome.php');
+echo '</td>'; 
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
