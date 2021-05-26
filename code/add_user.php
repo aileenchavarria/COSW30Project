@@ -18,14 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$problem = false; // No problems so far.
 	
 	// Check for each value...
-	if (empty($_POST['first_name'])) {
+	if (empty($_POST['username'])) {
 		$problem = true;
-		print '<center><p class="text--error">Please enter your first name!</p><center>';
+		print '<center><p class="text--error">Please enter a username!</p><center>';
 	}
 	
-	if (empty($_POST['last_name'])) {
+	if (empty($_POST['first_name'])) {
 		$problem = true;
-		print '<center><p class="text--error">Please enter your last name!</p></center>';
+		print '<center><p class="text--error">Please enter your first name!</p></center>';
 	}
 
 	if (empty($_POST['email'])) {
@@ -70,14 +70,14 @@ include 'footer.php';
 
 	<p>
   <i class="fas fa-user-alt"></i>
-  <label for="first_name">First Name:</label>
-  <input type="text" name="first_name" size="20" 
-  value="<?php if (isset($_POST['first_name'])) { print htmlspecialchars($_POST['first_name']); } ?>">
+  <label for="username">Username:</label>
+  <input type="text" name="username" size="20" 
+  value="<?php if (isset($_POST['username'])) { print htmlspecialchars($_POST['username']); } ?>">
   </p>
 
 	<p>
   <i class="fas fa-signature"></i>
-  <label for="last_name">Last Name:</label><input type="text" name="last_name" size="20" value="<?php if (isset($_POST['last_name'])) { print htmlspecialchars($_POST['last_name']); } ?>"></p>
+  <label for="first_name">First Name:</label><input type="text" name="first_name" size="20" value="<?php if (isset($_POST['first_name'])) { print htmlspecialchars($_POST['first_name']); } ?>"></p>
 
 	<p>
   <i class="fas fa-envelope"></i>
