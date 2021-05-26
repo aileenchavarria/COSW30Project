@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
 
 .navigation{
   padding-top: 20px;
@@ -47,28 +47,19 @@ body {
   color:#fff;
     overflow-x: hidden;
     font-family: 'Source Sans Pro', sans-serif;
-    height:100%; 
 }
 
-.inline {
-   display:inline-block;
-   margin-right:5px;
-}
-
-.h2 {
-  text-align: center;
-}
 
 main {
   text-align: center;
-  padding-top: 5%;
-
+  padding-top: 10%;
 }
 main h1 {
+  padding-bottom: 25px;
   font-family: 'Playfair Display', serif;
   font-size: 50px;
 }
-#post-content {
+.post-content {
   text-align: center;
   margin-left: auto;
   margin-right:auto;
@@ -80,6 +71,13 @@ h2 {
 }
 
 
+#wrapper {
+  background: #fff;
+  width: 300px;
+  margin: 0 auto;
+
+  
+}
 
 
 
@@ -103,15 +101,14 @@ input {
 
   
 #footer {
-position: absolute; 
-bottom: 0;
-left: 0;
+  position: fixed;
+    left: 0;
+  bottom: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
   text-align: center;
   clear: both;
-
 }
 
 
