@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+
+.navigation{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  top:0;
+  width:100%;
+  z-index:1;
+}
+
+.navbar-right{
+  float:right;
+   padding-right: 200px;
+}
+
+.navbar-right a{
+  text-decoration:none;
+  padding:10px;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:900;
+}
+
+.navbar-right a:hover{
+  text-decoration:underline;
+}
+
+
+a {
+  color: white;
+  padding: 0.2em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:visited {
+  color: white;
+  padding: 0.2em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+    height: 100%; 
+  }
+  
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #placeholder {
+    height: 100px;
+    width: 100px;
+
+}
+.boxes {
+  display: flex;
+}
+
+.box {
+  padding: 1em;
+  text-align: center;
+}
+
+
+
+body {
+  background-color: #f47c6ac4;
+  color:#fff;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+
+#footer {
+  position: fixed;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  text-align: center;
+  clear: both;
+}
